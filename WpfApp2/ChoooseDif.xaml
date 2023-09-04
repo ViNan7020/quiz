@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.ChoooseDif"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="ChoooseDif" Height="450" Width="800" WindowStyle="None">
+    <Grid x:Name="ChooseDif">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Easy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0" Width="283" Click="EasyDes" >Легкая</Button>
+        <Button x:Name="Mid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,115,0,0" Width="283" Click="Mid_Click" >Средняя</Button>
+        <Button x:Name="High" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,203,0,0" Width="283" Click="High_Click" >Высокая</Button>
+        <Button x:Name="ex" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,356,0,0" Width="204" Click="ex_Click"  >Выход</Button>
+        <Button x:Name="conf" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,356,0,0" Width="204" Click="Conf" Cursor="Hand" Grid.Column="1">Подтвердить</Button>
+        <Button x:Name="conf2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,356,0,0" Width="204" Click="Conf2" Cursor="Hand" Visibility="Hidden" Grid.Column="1">Подтвердить</Button>
+        <Button x:Name="games" Margin="10,36,147,0" VerticalAlignment="Top" Cursor="Hand" Visibility="Hidden" Click="Gamedes">Игры</Button>
+        <TextBlock x:Name="Text" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,39,0,0" Width="255" Text="" Background="LightGray" Height="196" Grid.Column="1" ></TextBlock>
+    </Grid>
+</Window>
